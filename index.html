@@ -4,16 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Random Password Generator</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div>
-    <h1>Generate a<br>random password</h1>
+  <div class="main">
+    <h1>Generate a<br><span class="title">random password</span><h1>
     <p>Never use an insecure password again.</p>
-    <button>Generate passwords</button>
+    <button onclick="getRandomPasswords()">Generate passwords</button>
   </div>
-  <div>
-    <p></p>
-    <p></p>
+  <div class="passwords">
+    <p id="pass-1">Password 1</p>
+    <p id="pass-2">Password 2</p>
   </div>
+  <script src="./app.js"></script>
 </body>
 </html>
